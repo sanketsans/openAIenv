@@ -13,7 +13,7 @@ rewards over a period and then try to maximise the reward.
 For discrete state and action space. 
 
 Projects solved:
-- **`0`** - Cartpole - For info on the environment - https://github.com/openai/gym/wiki/CartPole-v0 
+- **`1`** - Cartpole - For info on the environment - https://github.com/openai/gym/wiki/CartPole-v0 
 
 ### 2. Cross Entropy Method
 Here I use, CEM method to solve the environment. In this method, a small noise is added to weights to the neural network
@@ -30,7 +30,7 @@ corresponding to those rewards.
 - Repeat step 2-4 for number of episodes, with the mean weight and add noice to it to get correct set of weights. 
 
 Projects solved:
-- **`0`** - MountainCar_Continous - For info on the environment - https://github.com/openai/gym/wiki/MountainCarContinuous-v0
+- **`1`** - MountainCar_Continous - For info on the environment - https://github.com/openai/gym/wiki/MountainCarContinuous-v0
 
 ### 3. Deep Deterministic Policy Gradient
 
@@ -46,4 +46,4 @@ The actor takes the actions and is evaluated with the Q values generated using t
 </p>
 
 Projects solved:
-- **`0`** - Pendulum - For info on the environment - https://github.com/openai/gym/wiki/Pendulum-v0
+- **`1`** - Pendulum - For info on the environment - https://github.com/openai/gym/wiki/Pendulum-v0
