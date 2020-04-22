@@ -18,7 +18,7 @@ Projects solved:
 ### 2. Cross Entropy Method
 Here I use, CEM method to solve the environment. In this method, a small noise is added to weights to the neural network
 instead on the actions taken by the agent. It is an off policy reinforcement learning method.
-It uses a tanh activation function in the final layer - it can be used for continouse action space.
+It uses a tanh activation function in the final layer - **it can be used for continouse state action space.**
 - Instantiate a weight matrix.
 For every episode, a small amount of noise is added to the weight matrix and rewards are evaluated. Its like 
 genetic evolution method - 
@@ -35,6 +35,7 @@ Projects solved:
 ### 3. Deep Deterministic Policy Gradient
 
 This is quite a complex RL algorithm - can be used for continous state and action space. It is a kind of Actor - Critic method(Atleast that's what the founders call it), but it is somewhat similar to supervised learning. 
+**It can be used for continous state action space.**
 The actor takes the actions and is evaluated with the Q values generated using the critic. So, here actor acts as the output variable and the q values by the critic - we can call them, the labels. 
 
 - For every action taken by the actor model - you get state, action, reward, new_state, done(if task is done). So, you can create a tuple of { S, A, R, S', D } and store it in the replay buffer. 
@@ -52,3 +53,20 @@ so self.fc2 = nn.Linear(fcs1_unit + action_size, fcs2_unit)
 
 Projects solved:
 - **`1`** - Pendulum - For info on the environment - https://github.com/openai/gym/wiki/Pendulum-v0
+
+### 4. REINFORCE 
+
+REINFORCE is a policy based RL algorithm. It collects couple of episodes and then generate a loss function to be 
+back-propagated along the network. **I mostly use it for continous/discrete state space but only discrete action space.**
+Algorithm : 
+- For an episode, we generate a categorical distribution of probabilites and then collect the log probabilities of each action taken. 
+- After an episode is over, we mulitply the log probabilities with the associated reward for that action.
+- The main aim is to give more preference to those actions which generates more reward. 
+- The loss function is calculated by taking the sum of all the product of log probabilites with total reward. 
+
+Projects solved:
+- **`1`** - CartPole - For info on the environment - https://github.com/openai/gym/wiki/CartPole-v0
+- **`2`** - LunarLander - For info on the environment - https://github.com/openai/gym/wiki/Leaderboard#lunarlander-v2
+
+
+
