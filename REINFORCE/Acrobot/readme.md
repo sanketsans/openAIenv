@@ -11,7 +11,7 @@ NEWModel(
 )
 ```
  
-
+I used Adam optimizer with a learning rate of 0.01.
 I was able to achieve an **average reward(<-100.0)** over 100-episodes in less than 500 episodes, and an **average reward(<-90.0)** was achieved by 787th episode.
 
 Epochs:
