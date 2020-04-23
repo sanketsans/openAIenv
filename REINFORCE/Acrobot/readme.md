@@ -26,5 +26,13 @@ Episode 600 	Loss -96.55
 Episode 700 	Loss -98.38 
 Episode 787 	Loss -89.29 
 ```
+Here is the model performance : 
 
+## With Dropout layers
+
+![Performace](https://github.com/sanketsans/openAIenv/blob/master/REINFORCE/Acrobot/with_dropout.png)
+
+## Without Dropout layers
+
+![Performance](https://github.com/sanketsans/openAIenv/blob/master/REINFORCE/Acrobot/without_dropout.png)
 
