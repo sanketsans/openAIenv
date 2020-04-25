@@ -13,3 +13,7 @@ Q_tar = reward + gamma*Q_val*(1-done)
 
 loss_function = MSE(Q_exp, Q_tar)
 
+Projects solved:
+- **`1`** - LunarLander - For info on the environment - https://github.com/openai/gym/wiki/Leaderboard#lunarlander-v2
+- **`2`** - Highway(Incomplete) - For info on the environment - https://github.com/eleurent/highway-env
+
