@@ -9,7 +9,7 @@ The agent have **two** neural network model - local & train. Since we are updati
 number of time step) and predicting the model at every time step, the network will be all over the place. That's why we need 
 two different neural network model - one for training and one for learning. 
 
-Q_tar = reward + gamma*Q_val*(1-done)
+Q_tar = reward + gamma * Q_val * (1-done)
 
 loss_function = MSE(Q_exp, Q_tar)
 
