@@ -67,6 +67,6 @@ Algorithm :
 Projects solved:
 - **`1`** - CartPole - For info on the environment - https://github.com/openai/gym/wiki/CartPole-v0
 - **`2`** - LunarLander - For info on the environment - https://github.com/openai/gym/wiki/Leaderboard#lunarlander-v2
-
+- **`3`** - Acrobot - For info on the environment - https://gym.openai.com/envs/Acrobot-v1/
 
 
